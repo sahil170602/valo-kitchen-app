@@ -136,11 +136,11 @@ export default function LoginScreen() {
       {/* Header */}
       <div className="pt-12 px-2 z-10">
         <h2 className="text-3xl font-black text-[#1E0B4B] tracking-tight leading-none">
-          {step === 'mobile' ? 'Kitchen Access' : 'Register Facility'}
+          {step === 'mobile' ? 'Kitchen ' : 'Register Facility'}
         </h2>
         <p className="text-sm font-bold text-gray-500 mt-2.5 leading-snug">
           {step === 'mobile' 
-            ? 'Enter your operational mobile number to sync with the Valo network.' 
+            ? 'Enter your panel' 
             : 'Configure your kitchen identity and exact delivery pickup coordinates.'
           }
         </p>
@@ -181,7 +181,7 @@ export default function LoginScreen() {
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
               ) : (
-                <><span>Initialize Terminal</span><ArrowRight size={16} /></>
+                <><span>Login</span><ArrowRight size={16} /></>
               )}
             </button>
           </form>
@@ -247,7 +247,6 @@ export default function LoginScreen() {
 
       <div className="text-center pb-[calc(0.5rem+env(safe-area-inset-bottom))] z-10 shrink-0">
         <p className="text-[10px] font-bold text-gray-400 max-w-[240px] mx-auto leading-relaxed">
-          Authorized personnel only. Location data is required for rider dispatch routing.
         </p>
       </div>
     </div>
